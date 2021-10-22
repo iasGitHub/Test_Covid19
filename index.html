@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>COVID_19</title>
+<link href ="index.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "index.js"></script>
+
+</head>
+
+<body>
+    <h1>Questionnaire test COVID</h1>
+
+    <form id = "quiz" name = "quiz">
+
+    <p class = "info">Donnez votre temperature corporelle : </p>
+    <input id = "textbox" type = "text" name = "question1">
+
+    <p class = "info">Avez-vous des toux recents ou des toux qui se sont aggraves?</p>
+    <input type = "radio" id = "qst" name = "question2" value = "Oui"> Oui<br>
+    <input type = "radio" id = "qst" name = "question2" value = "Non"> Non<br>
+
+    <p class = "info">Avez-vous des difficultes a respirer?</p>
+
+    <input type = "radio" id = "qst" name = "question3" value = "Oui"> Oui<br>
+    <input type = "radio" id = "qst" name = "question3" value = "Non">Non<br>
+
+
+    <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+    </form>
+
+    <div id = "after_submit">
+        <p id = "number_correct"></p>
+        <p id = "message"></p>
+        <img id = "picture">
+    </div>
+</body>
+</html>
+
+<!-- 
+    <button onclick="rtn()">Retourner</button>
+    <script>
+        function rtn() {
+        window.history.back();
+        }
+    </script>
+-->
